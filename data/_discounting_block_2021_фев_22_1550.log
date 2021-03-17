@@ -1,0 +1,1336 @@
+0.8532 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+2.6124 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+5.2686 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1920, 1080]. Using actual size
+6.2540 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fdcd017f7c0>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fdcd01442e0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.2543 	EXP 	window1: mouseVisible = True
+6.2544 	EXP 	window1: recordFrameIntervals = False
+6.4188 	EXP 	window1: recordFrameIntervals = True
+6.6030 	EXP 	window1: recordFrameIntervals = False
+6.9303 	EXP 	Created welcomeText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='welcomeText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+6.9374 	EXP 	Created fixImg = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fixImg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.8, 1. ]), texRes=128, units='height', win=Window(...))
+6.9405 	EXP 	Created delayImg = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='delayImg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.8, 1. ]), texRes=128, units='height', win=Window(...))
+6.9435 	EXP 	Created choiceImg = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='choiceImg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.8, 1. ]), texRes=128, units='height', win=Window(...))
+6.9611 	EXP 	Created choiceWarning = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='red', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='choiceWarning', opacity=1.0, ori=0, pos=array([ 0. , -0.3]), rgb=array([255.,   0.,   0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.9642 	EXP 	Created leftImg = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='leftImg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.8, 1. ]), texRes=128, units='height', win=Window(...))
+6.9676 	EXP 	Created rewardImgLeft = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='rewardImgLeft', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.8, 1. ]), texRes=128, units='height', win=Window(...))
+6.9867 	EXP 	Created rewardText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='red', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='rewardText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255.,   0.,   0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.9902 	EXP 	Created rightImg = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='rightImg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.8, 1. ]), texRes=128, units='height', win=Window(...))
+6.9931 	EXP 	Created rewardImgRight = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='rewardImgRight', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.8, 1. ]), texRes=128, units='height', win=Window(...))
+6.9979 	EXP 	Created rightText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='red', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='rightText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255.,   0.,   0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+7.0081 	EXP 	Created block4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='img/coffee.jpeg', interpolate=True, mask=None, maskParams=None, name='block4', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.2]), size=array([0.2, 0.2]), texRes=128, units='height', win=Window(...))
+7.0142 	EXP 	Created block3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='img/cake.jpeg', interpolate=True, mask=None, maskParams=None, name='block3', opacity=1.0, ori=0.0, pos=array([0.5, 0.2]), size=array([0.2, 0.2]), texRes=128, units='height', win=Window(...))
+7.0196 	EXP 	Created block2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='img/gummi.jpeg', interpolate=True, mask=None, maskParams=None, name='block2', opacity=1.0, ori=0.0, pos=array([-0.5, -0.2]), size=array([0.2, 0.2]), texRes=128, units='height', win=Window(...))
+7.0661 	EXP 	Created block1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='img/tea.jpeg', interpolate=True, mask=None, maskParams=None, name='block1', opacity=1.0, ori=0.0, pos=array([-0.5,  0.2]), size=array([0.2, 0.2]), texRes=128, units='height', win=Window(...))
+7.0828 	EXP 	Created prize_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='prize_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.0873 	EXP 	Created repeatText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='repeatText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+7.1118 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.1239 	EXP 	Created endText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='endText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.1333 	EXP 	welcomeText: autoDraw = True
+8.2542 	DATA 	Keypress: space
+8.2557 	EXP 	Created sequence: sequential, trialTypes=1, nReps=200, seed=None
+8.2588 	EXP 	New trial (rep=0, index=0): None
+8.2599 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+8.2604 	EXP 	New trial (rep=0, index=0): None
+8.3863 	EXP 	welcomeText: autoDraw = False
+8.3863 	EXP 	fixImg: image = 'img/even_4_square.png'
+8.3863 	EXP 	fixImg: autoDraw = True
+9.3715 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+9.3722 	EXP 	New trial (rep=0, index=0): None
+9.4861 	EXP 	fixImg: autoDraw = False
+9.4861 	EXP 	fixImg: autoDraw = False
+9.4861 	EXP 	delayImg: image = 'img/even_8_square_4.png'
+9.4861 	EXP 	delayImg: autoDraw = True
+10.6008 	EXP 	delayImg: autoDraw = False
+10.6008 	EXP 	delayImg: autoDraw = False
+10.6008 	EXP 	choiceImg: image = 'img/even_choice_4.png'
+10.6008 	EXP 	choiceWarning: text = '32  for 67%              16  for 100%'
+10.6008 	EXP 	choiceImg: autoDraw = True
+10.6008 	EXP 	choiceWarning: autoDraw = True
+12.3543 	DATA 	Keypress: 1
+12.3600 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+12.3607 	EXP 	New trial (rep=0, index=0): None
+12.4683 	EXP 	choiceImg: autoDraw = False
+12.4683 	EXP 	choiceWarning: autoDraw = False
+12.4683 	EXP 	leftImg: image = 'img/even_8_circle_4.png'
+12.4683 	EXP 	leftImg: autoDraw = True
+13.6005 	EXP 	leftImg: autoDraw = False
+13.6005 	EXP 	leftImg: autoDraw = False
+13.6005 	EXP 	rewardImgLeft: opacity = 1.0
+13.6005 	EXP 	rewardImgLeft: image = 'img/8m&m.png'
+13.6005 	EXP 	rewardText: text = 'You got it!'
+13.6005 	EXP 	rewardImgLeft: autoDraw = True
+13.6005 	EXP 	rewardText: autoDraw = True
+14.4556 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+14.5149 	EXP 	rewardImgLeft: autoDraw = False
+14.5149 	EXP 	rewardText: autoDraw = False
+14.5149 	EXP 	block4: opacity = 0.0
+14.5149 	EXP 	block3: opacity = 0.0
+14.5149 	EXP 	block2: opacity = 0.0
+14.5149 	EXP 	block1: opacity = 0.0
+14.5149 	EXP 	prize_text: opacity = 1.0
+14.5149 	EXP 	repeatText: text = 'total amount for this block:32, press space to continue'
+14.5149 	EXP 	block4: autoDraw = True
+14.5149 	EXP 	block3: autoDraw = True
+14.5149 	EXP 	block2: autoDraw = True
+14.5149 	EXP 	block1: autoDraw = True
+14.5149 	EXP 	prize_text: autoDraw = True
+14.5149 	EXP 	prize_text: autoDraw = False
+14.5149 	EXP 	repeatText: autoDraw = True
+15.1225 	DATA 	Keypress: space
+15.1386 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+15.1416 	EXP 	New trial (rep=1, index=0): None
+15.1426 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+15.1433 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+15.2574 	EXP 	block4: autoDraw = False
+15.2574 	EXP 	block3: autoDraw = False
+15.2574 	EXP 	block2: autoDraw = False
+15.2574 	EXP 	block1: autoDraw = False
+15.2574 	EXP 	prize_text: autoDraw = False
+15.2574 	EXP 	repeatText: autoDraw = False
+15.2574 	EXP 	choiceImg: image = 'img/odd_choice_4.png'
+15.2574 	EXP 	choiceWarning: text = '18  for 100%              32  for 67%'
+15.2574 	EXP 	choiceImg: autoDraw = True
+15.2574 	EXP 	choiceWarning: autoDraw = True
+16.3810 	DATA 	Keypress: 2
+16.3938 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+16.3945 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+16.3951 	EXP 	New trial (rep=0, index=0): None
+16.4993 	EXP 	choiceImg: autoDraw = False
+16.4993 	EXP 	choiceWarning: autoDraw = False
+16.4993 	EXP 	rightImg: image = 'img/odd_8_circle_4.png'
+16.4993 	EXP 	rightImg: autoDraw = True
+17.6766 	EXP 	rightImg: autoDraw = False
+17.6766 	EXP 	rightImg: autoDraw = False
+17.6766 	EXP 	rewardImgRight: opacity = 0.0
+17.6766 	EXP 	rewardImgRight: image = 'img/8m&m.png'
+17.6766 	EXP 	rightText: text = 'You did not get it!'
+17.6766 	EXP 	rewardImgRight: autoDraw = True
+17.6766 	EXP 	rightText: autoDraw = True
+18.5248 	EXP 	rewardImgRight: autoDraw = False
+18.5248 	EXP 	rightText: autoDraw = False
+18.5248 	EXP 	block4: opacity = 0.0
+18.5248 	EXP 	block3: opacity = 0.0
+18.5248 	EXP 	block2: opacity = 0.0
+18.5248 	EXP 	block1: opacity = 0.0
+18.5248 	EXP 	prize_text: opacity = 1.0
+18.5248 	EXP 	repeatText: text = 'total amount for this block:32, press space to continue'
+18.5248 	EXP 	block4: autoDraw = True
+18.5248 	EXP 	block3: autoDraw = True
+18.5248 	EXP 	block2: autoDraw = True
+18.5248 	EXP 	block1: autoDraw = True
+18.5248 	EXP 	prize_text: autoDraw = True
+18.5248 	EXP 	prize_text: autoDraw = False
+18.5248 	EXP 	repeatText: autoDraw = True
+20.0566 	DATA 	Keypress: space
+20.0697 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+20.0728 	EXP 	New trial (rep=2, index=0): None
+20.0739 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+20.0746 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+20.1921 	EXP 	block4: autoDraw = False
+20.1921 	EXP 	block3: autoDraw = False
+20.1921 	EXP 	block2: autoDraw = False
+20.1921 	EXP 	block1: autoDraw = False
+20.1921 	EXP 	prize_text: autoDraw = False
+20.1921 	EXP 	repeatText: autoDraw = False
+20.1921 	EXP 	choiceImg: image = 'img/even_choice_5.png'
+20.1921 	EXP 	choiceWarning: text = '32  for 67%              20  for 100%'
+20.1921 	EXP 	choiceImg: autoDraw = True
+20.1921 	EXP 	choiceWarning: autoDraw = True
+21.1565 	DATA 	Keypress: 1
+21.1614 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+21.1620 	EXP 	New trial (rep=0, index=0): None
+21.2612 	EXP 	choiceImg: autoDraw = False
+21.2612 	EXP 	choiceWarning: autoDraw = False
+21.2612 	EXP 	leftImg: image = 'img/even_8_circle_5.png'
+21.2612 	EXP 	leftImg: autoDraw = True
+22.4373 	EXP 	leftImg: autoDraw = False
+22.4373 	EXP 	leftImg: autoDraw = False
+22.4373 	EXP 	rewardImgLeft: opacity = 1.0
+22.4373 	EXP 	rewardImgLeft: image = 'img/8m&m.png'
+22.4373 	EXP 	rewardText: text = 'You got it!'
+22.4373 	EXP 	rewardImgLeft: autoDraw = True
+22.4373 	EXP 	rewardText: autoDraw = True
+22.7824 	DATA 	Keypress: space
+23.2750 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+23.3221 	EXP 	rewardImgLeft: autoDraw = False
+23.3221 	EXP 	rewardText: autoDraw = False
+23.3221 	EXP 	block4: opacity = 0.0
+23.3221 	EXP 	block3: opacity = 0.0
+23.3221 	EXP 	block2: opacity = 0.0
+23.3221 	EXP 	block1: opacity = 0.0
+23.3221 	EXP 	prize_text: opacity = 1.0
+23.3221 	EXP 	repeatText: text = 'total amount for this block:64, press space to continue'
+23.3221 	EXP 	block4: autoDraw = True
+23.3221 	EXP 	block3: autoDraw = True
+23.3221 	EXP 	block2: autoDraw = True
+23.3221 	EXP 	block1: autoDraw = True
+23.3221 	EXP 	prize_text: autoDraw = True
+23.3221 	EXP 	prize_text: autoDraw = False
+23.3221 	EXP 	repeatText: autoDraw = True
+24.1162 	DATA 	Keypress: space
+24.1383 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+24.1412 	EXP 	New trial (rep=3, index=0): None
+24.1422 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+24.1429 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+24.2633 	EXP 	block4: autoDraw = False
+24.2633 	EXP 	block3: autoDraw = False
+24.2633 	EXP 	block2: autoDraw = False
+24.2633 	EXP 	block1: autoDraw = False
+24.2633 	EXP 	prize_text: autoDraw = False
+24.2633 	EXP 	repeatText: autoDraw = False
+24.2633 	EXP 	choiceImg: image = 'img/odd_choice_6.png'
+24.2633 	EXP 	choiceWarning: text = '22  for 100%              32  for 67%'
+24.2633 	EXP 	choiceImg: autoDraw = True
+24.2633 	EXP 	choiceWarning: autoDraw = True
+25.1663 	DATA 	Keypress: 2
+25.1791 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+25.1800 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+25.1807 	EXP 	New trial (rep=0, index=0): None
+25.2843 	EXP 	choiceImg: autoDraw = False
+25.2843 	EXP 	choiceWarning: autoDraw = False
+25.2843 	EXP 	rightImg: image = 'img/odd_8_circle_6.png'
+25.2843 	EXP 	rightImg: autoDraw = True
+26.4535 	EXP 	rightImg: autoDraw = False
+26.4535 	EXP 	rightImg: autoDraw = False
+26.4535 	EXP 	rewardImgRight: opacity = 0.0
+26.4535 	EXP 	rewardImgRight: image = 'img/8m&m.png'
+26.4535 	EXP 	rightText: text = 'You did not get it!'
+26.4535 	EXP 	rewardImgRight: autoDraw = True
+26.4535 	EXP 	rightText: autoDraw = True
+27.3031 	DATA 	Keypress: space
+27.3112 	EXP 	rewardImgRight: autoDraw = False
+27.3112 	EXP 	rightText: autoDraw = False
+27.3112 	EXP 	block4: opacity = 0.0
+27.3112 	EXP 	block3: opacity = 0.0
+27.3112 	EXP 	block2: opacity = 0.0
+27.3112 	EXP 	block1: opacity = 0.0
+27.3112 	EXP 	prize_text: opacity = 1.0
+27.3112 	EXP 	repeatText: text = 'total amount for this block:64, press space to continue'
+27.3112 	EXP 	block4: autoDraw = True
+27.3112 	EXP 	block3: autoDraw = True
+27.3112 	EXP 	block2: autoDraw = True
+27.3112 	EXP 	block1: autoDraw = True
+27.3112 	EXP 	prize_text: autoDraw = True
+27.3112 	EXP 	prize_text: autoDraw = False
+27.3112 	EXP 	repeatText: autoDraw = True
+30.1422 	DATA 	Keypress: space
+30.1587 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+30.1623 	EXP 	New trial (rep=4, index=0): None
+30.1636 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+30.1644 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+30.2855 	EXP 	block4: autoDraw = False
+30.2855 	EXP 	block3: autoDraw = False
+30.2855 	EXP 	block2: autoDraw = False
+30.2855 	EXP 	block1: autoDraw = False
+30.2855 	EXP 	prize_text: autoDraw = False
+30.2855 	EXP 	repeatText: autoDraw = False
+30.2855 	EXP 	choiceImg: image = 'img/even_choice_6.png'
+30.2855 	EXP 	choiceWarning: text = '32  for 67%              24  for 100%'
+30.2855 	EXP 	choiceImg: autoDraw = True
+30.2855 	EXP 	choiceWarning: autoDraw = True
+31.3011 	DATA 	Keypress: 1
+31.3135 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+31.3141 	EXP 	New trial (rep=0, index=0): None
+31.4123 	EXP 	choiceImg: autoDraw = False
+31.4123 	EXP 	choiceWarning: autoDraw = False
+31.4123 	EXP 	leftImg: image = 'img/even_8_circle_6.png'
+31.4123 	EXP 	leftImg: autoDraw = True
+32.5865 	EXP 	leftImg: autoDraw = False
+32.5865 	EXP 	leftImg: autoDraw = False
+32.5865 	EXP 	rewardImgLeft: opacity = 1.0
+32.5865 	EXP 	rewardImgLeft: image = 'img/8m&m.png'
+32.5865 	EXP 	rewardText: text = 'You got it!'
+32.5865 	EXP 	rewardImgLeft: autoDraw = True
+32.5865 	EXP 	rewardText: autoDraw = True
+33.1929 	DATA 	Keypress: space
+33.4270 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+33.4739 	EXP 	rewardImgLeft: autoDraw = False
+33.4739 	EXP 	rewardText: autoDraw = False
+33.4739 	EXP 	block4: opacity = 0.0
+33.4739 	EXP 	block3: opacity = 0.0
+33.4739 	EXP 	block2: opacity = 0.0
+33.4739 	EXP 	block1: opacity = 0.0
+33.4739 	EXP 	prize_text: opacity = 1.0
+33.4739 	EXP 	repeatText: text = 'total amount for this block:96, press space to continue'
+33.4739 	EXP 	block4: autoDraw = True
+33.4739 	EXP 	block3: autoDraw = True
+33.4739 	EXP 	block2: autoDraw = True
+33.4739 	EXP 	block1: autoDraw = True
+33.4739 	EXP 	prize_text: autoDraw = True
+33.4739 	EXP 	prize_text: autoDraw = False
+33.4739 	EXP 	repeatText: autoDraw = True
+34.4190 	DATA 	Keypress: space
+34.4407 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+34.4437 	EXP 	New trial (rep=5, index=0): None
+34.4446 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+34.4454 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+34.5601 	EXP 	block4: autoDraw = False
+34.5601 	EXP 	block3: autoDraw = False
+34.5601 	EXP 	block2: autoDraw = False
+34.5601 	EXP 	block1: autoDraw = False
+34.5601 	EXP 	prize_text: autoDraw = False
+34.5601 	EXP 	repeatText: autoDraw = False
+34.5601 	EXP 	choiceImg: image = 'img/odd_choice_6.png'
+34.5601 	EXP 	choiceWarning: text = '26  for 100%              32  for 67%'
+34.5601 	EXP 	choiceImg: autoDraw = True
+34.5601 	EXP 	choiceWarning: autoDraw = True
+35.2186 	DATA 	Keypress: 2
+35.2309 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+35.2318 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+35.2325 	EXP 	New trial (rep=0, index=0): None
+35.3364 	EXP 	choiceImg: autoDraw = False
+35.3364 	EXP 	choiceWarning: autoDraw = False
+35.3364 	EXP 	rightImg: image = 'img/odd_8_circle_6.png'
+35.3364 	EXP 	rightImg: autoDraw = True
+36.5087 	EXP 	rightImg: autoDraw = False
+36.5087 	EXP 	rightImg: autoDraw = False
+36.5087 	EXP 	rewardImgRight: opacity = 1.0
+36.5087 	EXP 	rewardImgRight: image = 'img/8m&m.png'
+36.5087 	EXP 	rightText: text = 'You got it!'
+36.5087 	EXP 	rewardImgRight: autoDraw = True
+36.5087 	EXP 	rightText: autoDraw = True
+37.0860 	DATA 	Keypress: space
+37.3909 	EXP 	rewardImgRight: autoDraw = False
+37.3909 	EXP 	rightText: autoDraw = False
+37.3909 	EXP 	block4: opacity = 0.0
+37.3909 	EXP 	block3: opacity = 0.0
+37.3909 	EXP 	block2: opacity = 0.0
+37.3909 	EXP 	block1: opacity = 0.0
+37.3909 	EXP 	prize_text: opacity = 1.0
+37.3909 	EXP 	repeatText: text = 'total amount for this block:128, press space to continue'
+37.3909 	EXP 	block4: autoDraw = True
+37.3909 	EXP 	block3: autoDraw = True
+37.3909 	EXP 	block2: autoDraw = True
+37.3909 	EXP 	block1: autoDraw = True
+37.3909 	EXP 	prize_text: autoDraw = True
+37.3909 	EXP 	prize_text: autoDraw = False
+37.3909 	EXP 	repeatText: autoDraw = True
+38.2699 	DATA 	Keypress: space
+38.2913 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+38.2943 	EXP 	New trial (rep=6, index=0): None
+38.2952 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+38.2960 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+38.4202 	EXP 	block4: autoDraw = False
+38.4202 	EXP 	block3: autoDraw = False
+38.4202 	EXP 	block2: autoDraw = False
+38.4202 	EXP 	block1: autoDraw = False
+38.4202 	EXP 	prize_text: autoDraw = False
+38.4202 	EXP 	repeatText: autoDraw = False
+38.4202 	EXP 	choiceImg: image = 'img/even_choice_7.png'
+38.4202 	EXP 	choiceWarning: text = '32  for 67%              28  for 100%'
+38.4202 	EXP 	choiceImg: autoDraw = True
+38.4202 	EXP 	choiceWarning: autoDraw = True
+39.7365 	DATA 	Keypress: 1
+39.7494 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+39.7500 	EXP 	New trial (rep=0, index=0): None
+39.8513 	EXP 	choiceImg: autoDraw = False
+39.8513 	EXP 	choiceWarning: autoDraw = False
+39.8513 	EXP 	leftImg: image = 'img/even_8_circle_7.png'
+39.8513 	EXP 	leftImg: autoDraw = True
+41.0235 	EXP 	leftImg: autoDraw = False
+41.0235 	EXP 	leftImg: autoDraw = False
+41.0235 	EXP 	rewardImgLeft: opacity = 0.0
+41.0235 	EXP 	rewardImgLeft: image = 'img/8m&m.png'
+41.0235 	EXP 	rewardText: text = 'You did not get it!'
+41.0235 	EXP 	rewardImgLeft: autoDraw = True
+41.0235 	EXP 	rewardText: autoDraw = True
+41.7034 	DATA 	Keypress: space
+41.8466 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+41.8958 	EXP 	rewardImgLeft: autoDraw = False
+41.8958 	EXP 	rewardText: autoDraw = False
+41.8958 	EXP 	block4: opacity = 0.0
+41.8958 	EXP 	block3: opacity = 0.0
+41.8958 	EXP 	block2: opacity = 0.0
+41.8958 	EXP 	block1: opacity = 0.0
+41.8958 	EXP 	prize_text: opacity = 1.0
+41.8958 	EXP 	repeatText: text = 'total amount for this block:128, press space to continue'
+41.8958 	EXP 	block4: autoDraw = True
+41.8958 	EXP 	block3: autoDraw = True
+41.8958 	EXP 	block2: autoDraw = True
+41.8958 	EXP 	block1: autoDraw = True
+41.8958 	EXP 	prize_text: autoDraw = True
+41.8958 	EXP 	prize_text: autoDraw = False
+41.8958 	EXP 	repeatText: autoDraw = True
+42.5709 	DATA 	Keypress: space
+42.5941 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+42.5973 	EXP 	New trial (rep=7, index=0): None
+42.5982 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+42.5989 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+42.7282 	EXP 	block4: autoDraw = False
+42.7282 	EXP 	block3: autoDraw = False
+42.7282 	EXP 	block2: autoDraw = False
+42.7282 	EXP 	block1: autoDraw = False
+42.7282 	EXP 	prize_text: autoDraw = False
+42.7282 	EXP 	repeatText: autoDraw = False
+42.7282 	EXP 	choiceImg: image = 'img/odd_choice_8.png'
+42.7282 	EXP 	choiceWarning: text = '30  for 100%              32  for 67%'
+42.7282 	EXP 	choiceImg: autoDraw = True
+42.7282 	EXP 	choiceWarning: autoDraw = True
+44.2546 	DATA 	Keypress: 1
+44.2683 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+44.2690 	EXP 	New trial (rep=0, index=0): None
+44.3826 	EXP 	choiceImg: autoDraw = False
+44.3826 	EXP 	choiceWarning: autoDraw = False
+44.3826 	EXP 	leftImg: image = 'img/odd_8_circle.png'
+44.3826 	EXP 	leftImg: autoDraw = True
+45.5582 	EXP 	leftImg: autoDraw = False
+45.5582 	EXP 	leftImg: autoDraw = False
+45.5582 	EXP 	rewardImgLeft: opacity = 1.0
+45.5582 	EXP 	rewardImgLeft: image = 'img/8m&m.png'
+45.5582 	EXP 	rewardText: text = 'You got it!'
+45.5582 	EXP 	rewardImgLeft: autoDraw = True
+45.5582 	EXP 	rewardText: autoDraw = True
+46.0545 	DATA 	Keypress: space
+46.3805 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+46.4277 	EXP 	rewardImgLeft: autoDraw = False
+46.4277 	EXP 	rewardText: autoDraw = False
+46.4277 	EXP 	block4: opacity = 0.0
+46.4277 	EXP 	block3: opacity = 0.0
+46.4277 	EXP 	block2: opacity = 0.0
+46.4277 	EXP 	block1: opacity = 0.0
+46.4277 	EXP 	prize_text: opacity = 1.0
+46.4277 	EXP 	repeatText: text = 'total amount for this block:158, press space to continue'
+46.4277 	EXP 	block4: autoDraw = True
+46.4277 	EXP 	block3: autoDraw = True
+46.4277 	EXP 	block2: autoDraw = True
+46.4277 	EXP 	block1: autoDraw = True
+46.4277 	EXP 	prize_text: autoDraw = True
+46.4277 	EXP 	prize_text: autoDraw = False
+46.4277 	EXP 	repeatText: autoDraw = True
+46.9790 	DATA 	Keypress: space
+46.9926 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+46.9958 	EXP 	New trial (rep=8, index=0): None
+46.9967 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+46.9974 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+47.1214 	EXP 	block4: autoDraw = False
+47.1214 	EXP 	block3: autoDraw = False
+47.1214 	EXP 	block2: autoDraw = False
+47.1214 	EXP 	block1: autoDraw = False
+47.1214 	EXP 	prize_text: autoDraw = False
+47.1214 	EXP 	repeatText: autoDraw = False
+47.1214 	EXP 	choiceImg: image = 'img/even_choice_7.png'
+47.1214 	EXP 	choiceWarning: text = '32  for 67%              28  for 100%'
+47.1214 	EXP 	choiceImg: autoDraw = True
+47.1214 	EXP 	choiceWarning: autoDraw = True
+49.9465 	DATA 	Keypress: 1
+49.9522 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+49.9529 	EXP 	New trial (rep=0, index=0): None
+50.0577 	EXP 	choiceImg: autoDraw = False
+50.0577 	EXP 	choiceWarning: autoDraw = False
+50.0577 	EXP 	leftImg: image = 'img/even_8_circle_7.png'
+50.0577 	EXP 	leftImg: autoDraw = True
+51.2215 	EXP 	leftImg: autoDraw = False
+51.2215 	EXP 	leftImg: autoDraw = False
+51.2215 	EXP 	rewardImgLeft: opacity = 1.0
+51.2215 	EXP 	rewardImgLeft: image = 'img/8m&m.png'
+51.2215 	EXP 	rewardText: text = 'You got it!'
+51.2215 	EXP 	rewardImgLeft: autoDraw = True
+51.2215 	EXP 	rewardText: autoDraw = True
+52.0646 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+52.1111 	EXP 	rewardImgLeft: autoDraw = False
+52.1111 	EXP 	rewardText: autoDraw = False
+52.1111 	EXP 	block4: opacity = 0.0
+52.1111 	EXP 	block3: opacity = 0.0
+52.1111 	EXP 	block2: opacity = 0.0
+52.1111 	EXP 	block1: opacity = 0.0
+52.1111 	EXP 	prize_text: opacity = 1.0
+52.1111 	EXP 	repeatText: text = 'total amount for this block:190, press space to continue'
+52.1111 	EXP 	block4: autoDraw = True
+52.1111 	EXP 	block3: autoDraw = True
+52.1111 	EXP 	block2: autoDraw = True
+52.1111 	EXP 	block1: autoDraw = True
+52.1111 	EXP 	prize_text: autoDraw = True
+52.1111 	EXP 	prize_text: autoDraw = False
+52.1111 	EXP 	repeatText: autoDraw = True
+52.1978 	DATA 	Keypress: space
+52.2107 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+52.2137 	EXP 	New trial (rep=9, index=0): None
+52.2147 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+52.2154 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+52.3306 	EXP 	block4: autoDraw = False
+52.3306 	EXP 	block3: autoDraw = False
+52.3306 	EXP 	block2: autoDraw = False
+52.3306 	EXP 	block1: autoDraw = False
+52.3306 	EXP 	prize_text: autoDraw = False
+52.3306 	EXP 	repeatText: autoDraw = False
+52.3306 	EXP 	choiceImg: image = 'img/odd_choice_8.png'
+52.3306 	EXP 	choiceWarning: text = '30  for 100%              32  for 67%'
+52.3306 	EXP 	choiceImg: autoDraw = True
+52.3306 	EXP 	choiceWarning: autoDraw = True
+57.2819 	DATA 	Keypress: 2
+57.2865 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+57.2873 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+57.2882 	EXP 	New trial (rep=0, index=0): None
+57.3971 	EXP 	choiceImg: autoDraw = False
+57.3971 	EXP 	choiceWarning: autoDraw = False
+57.3971 	EXP 	rightImg: image = 'img/odd_8_circle_8.png'
+57.3971 	EXP 	rightImg: autoDraw = True
+58.5572 	EXP 	rightImg: autoDraw = False
+58.5572 	EXP 	rightImg: autoDraw = False
+58.5572 	EXP 	rewardImgRight: opacity = 1.0
+58.5572 	EXP 	rewardImgRight: image = 'img/8m&m.png'
+58.5572 	EXP 	rightText: text = 'You got it!'
+58.5572 	EXP 	rewardImgRight: autoDraw = True
+58.5572 	EXP 	rightText: autoDraw = True
+59.4283 	EXP 	rewardImgRight: autoDraw = False
+59.4283 	EXP 	rightText: autoDraw = False
+59.4283 	EXP 	block4: opacity = 0.0
+59.4283 	EXP 	block3: opacity = 0.0
+59.4283 	EXP 	block2: opacity = 0.0
+59.4283 	EXP 	block1: opacity = 1.0
+59.4283 	EXP 	prize_text: opacity = 1.0
+59.4283 	EXP 	repeatText: text = 'total amount for this block:222, press space to continue'
+59.4283 	EXP 	block4: autoDraw = True
+59.4283 	EXP 	block3: autoDraw = True
+59.4283 	EXP 	block2: autoDraw = True
+59.4283 	EXP 	block1: autoDraw = True
+59.4283 	EXP 	prize_text: autoDraw = True
+60.4324 	EXP 	prize_text: autoDraw = False
+61.4156 	EXP 	repeatText: autoDraw = True
+63.6586 	DATA 	Keypress: space
+63.6817 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+63.6847 	EXP 	New trial (rep=10, index=0): None
+63.6856 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+63.6863 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+63.8054 	EXP 	block4: autoDraw = False
+63.8054 	EXP 	block3: autoDraw = False
+63.8054 	EXP 	block2: autoDraw = False
+63.8054 	EXP 	block1: autoDraw = False
+63.8054 	EXP 	prize_text: autoDraw = False
+63.8054 	EXP 	repeatText: autoDraw = False
+63.8054 	EXP 	choiceImg: image = 'img/even_choice_8.png'
+63.8054 	EXP 	choiceWarning: text = '32  for 67%              30  for 100%'
+63.8054 	EXP 	choiceImg: autoDraw = True
+63.8054 	EXP 	choiceWarning: autoDraw = True
+67.1262 	DATA 	Keypress: 2
+67.1389 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+67.1397 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+67.1403 	EXP 	New trial (rep=0, index=0): None
+67.2492 	EXP 	choiceImg: autoDraw = False
+67.2492 	EXP 	choiceWarning: autoDraw = False
+67.2492 	EXP 	rightImg: image = 'img/even_8_circle.png'
+67.2492 	EXP 	rightImg: autoDraw = True
+68.4078 	EXP 	rightImg: autoDraw = False
+68.4078 	EXP 	rightImg: autoDraw = False
+68.4078 	EXP 	rewardImgRight: opacity = 1.0
+68.4078 	EXP 	rewardImgRight: image = 'img/8m&m.png'
+68.4078 	EXP 	rightText: text = 'You got it!'
+68.4078 	EXP 	rewardImgRight: autoDraw = True
+68.4078 	EXP 	rightText: autoDraw = True
+68.9181 	DATA 	Keypress: space
+69.2814 	EXP 	rewardImgRight: autoDraw = False
+69.2814 	EXP 	rightText: autoDraw = False
+69.2814 	EXP 	block4: opacity = 0.0
+69.2814 	EXP 	block3: opacity = 0.0
+69.2814 	EXP 	block2: opacity = 0.0
+69.2814 	EXP 	block1: opacity = 1.0
+69.2814 	EXP 	prize_text: opacity = 1.0
+69.2814 	EXP 	repeatText: text = 'total amount for this block:0, press space to continue'
+69.2814 	EXP 	block4: autoDraw = True
+69.2814 	EXP 	block3: autoDraw = True
+69.2814 	EXP 	block2: autoDraw = True
+69.2814 	EXP 	block1: autoDraw = True
+69.2814 	EXP 	prize_text: autoDraw = True
+69.2814 	EXP 	prize_text: autoDraw = False
+69.2814 	EXP 	repeatText: autoDraw = True
+72.2774 	DATA 	Keypress: space
+72.2983 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+72.2989 	EXP 	New trial (rep=0, index=0): None
+72.3086 	EXP 	block4: autoDraw = False
+72.3086 	EXP 	block3: autoDraw = False
+72.3086 	EXP 	block2: autoDraw = False
+72.3086 	EXP 	block1: autoDraw = False
+72.3086 	EXP 	prize_text: autoDraw = False
+72.3086 	EXP 	repeatText: autoDraw = False
+72.3086 	EXP 	text: autoDraw = True
+75.9116 	DATA 	Keypress: space
+75.9258 	EXP 	New trial (rep=11, index=0): None
+75.9269 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+75.9276 	EXP 	New trial (rep=0, index=0): None
+76.0482 	EXP 	text: autoDraw = False
+76.0482 	EXP 	fixImg: image = 'img/odd_4_square.png'
+76.0482 	EXP 	fixImg: autoDraw = True
+77.0376 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+77.0383 	EXP 	New trial (rep=0, index=0): None
+77.1493 	EXP 	fixImg: autoDraw = False
+77.1493 	EXP 	fixImg: autoDraw = False
+77.1493 	EXP 	delayImg: image = 'img/odd_8_square_4.png'
+77.1493 	EXP 	delayImg: autoDraw = True
+92.2524 	EXP 	delayImg: autoDraw = False
+92.2524 	EXP 	delayImg: autoDraw = False
+92.2524 	EXP 	choiceImg: image = 'img/odd_choice_4.png'
+92.2524 	EXP 	choiceWarning: text = '16  for 100%              32  for 67%'
+92.2524 	EXP 	choiceImg: autoDraw = True
+92.2524 	EXP 	choiceWarning: autoDraw = True
+94.1158 	DATA 	Keypress: 2
+94.1286 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+94.1296 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+94.1303 	EXP 	New trial (rep=0, index=0): None
+94.2356 	EXP 	choiceImg: autoDraw = False
+94.2356 	EXP 	choiceWarning: autoDraw = False
+94.2356 	EXP 	rightImg: image = 'img/odd_8_circle_4.png'
+94.2356 	EXP 	rightImg: autoDraw = True
+109.3986 	EXP 	rightImg: autoDraw = False
+109.3986 	EXP 	rightImg: autoDraw = False
+109.3986 	EXP 	rewardImgRight: opacity = 1.0
+109.3986 	EXP 	rewardImgRight: image = 'img/8m&m.png'
+109.3986 	EXP 	rightText: text = 'You got it!'
+109.3986 	EXP 	rewardImgRight: autoDraw = True
+109.3986 	EXP 	rightText: autoDraw = True
+110.2725 	EXP 	rewardImgRight: autoDraw = False
+110.2725 	EXP 	rightText: autoDraw = False
+110.2725 	EXP 	block4: opacity = 0.0
+110.2725 	EXP 	block3: opacity = 0.0
+110.2725 	EXP 	block2: opacity = 0.0
+110.2725 	EXP 	block1: opacity = 1.0
+110.2725 	EXP 	prize_text: opacity = 1.0
+110.2725 	EXP 	repeatText: text = 'total amount for this block:32, press space to continue'
+110.2725 	EXP 	block4: autoDraw = True
+110.2725 	EXP 	block3: autoDraw = True
+110.2725 	EXP 	block2: autoDraw = True
+110.2725 	EXP 	block1: autoDraw = True
+110.2725 	EXP 	prize_text: autoDraw = True
+110.2725 	EXP 	prize_text: autoDraw = False
+110.2725 	EXP 	repeatText: autoDraw = True
+113.0618 	DATA 	Keypress: space
+113.0746 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+113.0776 	EXP 	New trial (rep=12, index=0): None
+113.0785 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+113.0792 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+113.1992 	EXP 	block4: autoDraw = False
+113.1992 	EXP 	block3: autoDraw = False
+113.1992 	EXP 	block2: autoDraw = False
+113.1992 	EXP 	block1: autoDraw = False
+113.1992 	EXP 	prize_text: autoDraw = False
+113.1992 	EXP 	repeatText: autoDraw = False
+113.1992 	EXP 	choiceImg: image = 'img/even_choice_4.png'
+113.1992 	EXP 	choiceWarning: text = '32  for 67%              18  for 100%'
+113.1992 	EXP 	choiceImg: autoDraw = True
+113.1992 	EXP 	choiceWarning: autoDraw = True
+124.2732 	DATA 	Keypress: 1
+124.2860 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+124.2867 	EXP 	New trial (rep=0, index=0): None
+124.3884 	EXP 	choiceImg: autoDraw = False
+124.3884 	EXP 	choiceWarning: autoDraw = False
+124.3884 	EXP 	leftImg: image = 'img/even_8_circle_4.png'
+124.3884 	EXP 	leftImg: autoDraw = True
+139.5605 	EXP 	leftImg: autoDraw = False
+139.5605 	EXP 	leftImg: autoDraw = False
+139.5605 	EXP 	rewardImgLeft: opacity = 0.0
+139.5605 	EXP 	rewardImgLeft: image = 'img/8m&m.png'
+139.5605 	EXP 	rewardText: text = 'You did not get it!'
+139.5605 	EXP 	rewardImgLeft: autoDraw = True
+139.5605 	EXP 	rewardText: autoDraw = True
+140.3867 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+140.4225 	EXP 	rewardImgLeft: autoDraw = False
+140.4225 	EXP 	rewardText: autoDraw = False
+140.4225 	EXP 	block4: opacity = 0.0
+140.4225 	EXP 	block3: opacity = 0.0
+140.4225 	EXP 	block2: opacity = 0.0
+140.4225 	EXP 	block1: opacity = 1.0
+140.4225 	EXP 	prize_text: opacity = 1.0
+140.4225 	EXP 	repeatText: text = 'total amount for this block:32, press space to continue'
+140.4225 	EXP 	block4: autoDraw = True
+140.4225 	EXP 	block3: autoDraw = True
+140.4225 	EXP 	block2: autoDraw = True
+140.4225 	EXP 	block1: autoDraw = True
+140.4225 	EXP 	prize_text: autoDraw = True
+140.4225 	EXP 	prize_text: autoDraw = False
+140.4225 	EXP 	repeatText: autoDraw = True
+142.8111 	DATA 	Keypress: space
+142.8320 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+142.8353 	EXP 	New trial (rep=13, index=0): None
+142.8363 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+142.8370 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+142.9574 	EXP 	block4: autoDraw = False
+142.9574 	EXP 	block3: autoDraw = False
+142.9574 	EXP 	block2: autoDraw = False
+142.9574 	EXP 	block1: autoDraw = False
+142.9574 	EXP 	prize_text: autoDraw = False
+142.9574 	EXP 	repeatText: autoDraw = False
+142.9574 	EXP 	choiceImg: image = 'img/odd_choice_5.png'
+142.9574 	EXP 	choiceWarning: text = '20  for 100%              32  for 67%'
+142.9574 	EXP 	choiceImg: autoDraw = True
+142.9574 	EXP 	choiceWarning: autoDraw = True
+144.3185 	DATA 	Keypress: 1
+144.3236 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+144.3243 	EXP 	New trial (rep=0, index=0): None
+144.4310 	EXP 	choiceImg: autoDraw = False
+144.4310 	EXP 	choiceWarning: autoDraw = False
+144.4310 	EXP 	leftImg: image = 'img/odd_5_circle.png'
+144.4310 	EXP 	leftImg: autoDraw = True
+145.5843 	EXP 	leftImg: autoDraw = False
+145.5843 	EXP 	leftImg: autoDraw = False
+145.5843 	EXP 	rewardImgLeft: opacity = 1.0
+145.5843 	EXP 	rewardImgLeft: image = 'img/5m&m.png'
+145.5843 	EXP 	rewardText: text = 'You got it!'
+145.5843 	EXP 	rewardImgLeft: autoDraw = True
+145.5843 	EXP 	rewardText: autoDraw = True
+146.4368 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+146.4832 	EXP 	rewardImgLeft: autoDraw = False
+146.4832 	EXP 	rewardText: autoDraw = False
+146.4832 	EXP 	block4: opacity = 0.0
+146.4832 	EXP 	block3: opacity = 0.0
+146.4832 	EXP 	block2: opacity = 0.0
+146.4832 	EXP 	block1: opacity = 1.0
+146.4832 	EXP 	prize_text: opacity = 1.0
+146.4832 	EXP 	repeatText: text = 'total amount for this block:52, press space to continue'
+146.4832 	EXP 	block4: autoDraw = True
+146.4832 	EXP 	block3: autoDraw = True
+146.4832 	EXP 	block2: autoDraw = True
+146.4832 	EXP 	block1: autoDraw = True
+146.4832 	EXP 	prize_text: autoDraw = True
+146.4832 	EXP 	prize_text: autoDraw = False
+146.4832 	EXP 	repeatText: autoDraw = True
+146.8530 	DATA 	Mouse: Left button down, pos=(0,1)
+147.0282 	DATA 	Mouse:  Left button up, pos=(0,1)
+148.6954 	DATA 	Keypress: space
+148.7164 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+148.7193 	EXP 	New trial (rep=14, index=0): None
+148.7202 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+148.7209 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+148.8378 	EXP 	block4: autoDraw = False
+148.8378 	EXP 	block3: autoDraw = False
+148.8378 	EXP 	block2: autoDraw = False
+148.8378 	EXP 	block1: autoDraw = False
+148.8378 	EXP 	prize_text: autoDraw = False
+148.8378 	EXP 	repeatText: autoDraw = False
+148.8378 	EXP 	choiceImg: image = 'img/even_choice_4.png'
+148.8378 	EXP 	choiceWarning: text = '32  for 67%              18  for 100%'
+148.8378 	EXP 	choiceImg: autoDraw = True
+148.8378 	EXP 	choiceWarning: autoDraw = True
+150.0541 	DATA 	Keypress: 2
+150.0588 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+150.0598 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+150.0604 	EXP 	New trial (rep=0, index=0): None
+150.1600 	EXP 	choiceImg: autoDraw = False
+150.1600 	EXP 	choiceWarning: autoDraw = False
+150.1600 	EXP 	rightImg: image = 'img/even_4_circle.png'
+150.1600 	EXP 	rightImg: autoDraw = True
+151.3144 	EXP 	rightImg: autoDraw = False
+151.3144 	EXP 	rightImg: autoDraw = False
+151.3144 	EXP 	rewardImgRight: opacity = 1.0
+151.3144 	EXP 	rewardImgRight: image = 'img/4m&m.png'
+151.3144 	EXP 	rightText: text = 'You got it!'
+151.3144 	EXP 	rewardImgRight: autoDraw = True
+151.3144 	EXP 	rightText: autoDraw = True
+152.0299 	DATA 	Keypress: space
+152.2174 	EXP 	rewardImgRight: autoDraw = False
+152.2174 	EXP 	rightText: autoDraw = False
+152.2174 	EXP 	block4: opacity = 0.0
+152.2174 	EXP 	block3: opacity = 0.0
+152.2174 	EXP 	block2: opacity = 0.0
+152.2174 	EXP 	block1: opacity = 1.0
+152.2174 	EXP 	prize_text: opacity = 1.0
+152.2174 	EXP 	repeatText: text = 'total amount for this block:70, press space to continue'
+152.2174 	EXP 	block4: autoDraw = True
+152.2174 	EXP 	block3: autoDraw = True
+152.2174 	EXP 	block2: autoDraw = True
+152.2174 	EXP 	block1: autoDraw = True
+152.2174 	EXP 	prize_text: autoDraw = True
+152.2174 	EXP 	prize_text: autoDraw = False
+152.2174 	EXP 	repeatText: autoDraw = True
+152.6464 	DATA 	Keypress: space
+152.6678 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+152.6707 	EXP 	New trial (rep=15, index=0): None
+152.6716 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+152.6723 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+152.7870 	EXP 	block4: autoDraw = False
+152.7870 	EXP 	block3: autoDraw = False
+152.7870 	EXP 	block2: autoDraw = False
+152.7870 	EXP 	block1: autoDraw = False
+152.7870 	EXP 	prize_text: autoDraw = False
+152.7870 	EXP 	repeatText: autoDraw = False
+152.7870 	EXP 	choiceImg: image = 'img/odd_choice_4.png'
+152.7870 	EXP 	choiceWarning: text = '16  for 100%              32  for 67%'
+152.7870 	EXP 	choiceImg: autoDraw = True
+152.7870 	EXP 	choiceWarning: autoDraw = True
+153.4215 	DATA 	Keypress: 1
+153.4264 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+153.4270 	EXP 	New trial (rep=0, index=0): None
+153.5290 	EXP 	choiceImg: autoDraw = False
+153.5290 	EXP 	choiceWarning: autoDraw = False
+153.5290 	EXP 	leftImg: image = 'img/odd_4_circle.png'
+153.5290 	EXP 	leftImg: autoDraw = True
+154.6767 	EXP 	leftImg: autoDraw = False
+154.6767 	EXP 	leftImg: autoDraw = False
+154.6767 	EXP 	rewardImgLeft: opacity = 1.0
+154.6767 	EXP 	rewardImgLeft: image = 'img/4m&m.png'
+154.6767 	EXP 	rewardText: text = 'You got it!'
+154.6767 	EXP 	rewardImgLeft: autoDraw = True
+154.6767 	EXP 	rewardText: autoDraw = True
+155.2803 	DATA 	Keypress: space
+155.5229 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+155.5687 	EXP 	rewardImgLeft: autoDraw = False
+155.5687 	EXP 	rewardText: autoDraw = False
+155.5687 	EXP 	block4: opacity = 0.0
+155.5687 	EXP 	block3: opacity = 0.0
+155.5687 	EXP 	block2: opacity = 0.0
+155.5687 	EXP 	block1: opacity = 1.0
+155.5687 	EXP 	prize_text: opacity = 1.0
+155.5687 	EXP 	repeatText: text = 'total amount for this block:86, press space to continue'
+155.5687 	EXP 	block4: autoDraw = True
+155.5687 	EXP 	block3: autoDraw = True
+155.5687 	EXP 	block2: autoDraw = True
+155.5687 	EXP 	block1: autoDraw = True
+155.5687 	EXP 	prize_text: autoDraw = True
+155.5687 	EXP 	prize_text: autoDraw = False
+155.5687 	EXP 	repeatText: autoDraw = True
+156.2638 	DATA 	Keypress: space
+156.2849 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+156.2903 	EXP 	New trial (rep=16, index=0): None
+156.2913 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+156.2920 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+156.4068 	EXP 	block4: autoDraw = False
+156.4068 	EXP 	block3: autoDraw = False
+156.4068 	EXP 	block2: autoDraw = False
+156.4068 	EXP 	block1: autoDraw = False
+156.4068 	EXP 	prize_text: autoDraw = False
+156.4068 	EXP 	repeatText: autoDraw = False
+156.4068 	EXP 	choiceImg: image = 'img/even_choice_4.png'
+156.4068 	EXP 	choiceWarning: text = '32  for 67%              14  for 100%'
+156.4068 	EXP 	choiceImg: autoDraw = True
+156.4068 	EXP 	choiceWarning: autoDraw = True
+157.3553 	DATA 	Keypress: 2
+157.3602 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+157.3611 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+157.3617 	EXP 	New trial (rep=0, index=0): None
+157.4583 	EXP 	choiceImg: autoDraw = False
+157.4583 	EXP 	choiceWarning: autoDraw = False
+157.4583 	EXP 	rightImg: image = 'img/even_4_circle.png'
+157.4583 	EXP 	rightImg: autoDraw = True
+158.6132 	EXP 	rightImg: autoDraw = False
+158.6132 	EXP 	rightImg: autoDraw = False
+158.6132 	EXP 	rewardImgRight: opacity = 1.0
+158.6132 	EXP 	rewardImgRight: image = 'img/4m&m.png'
+158.6132 	EXP 	rightText: text = 'You got it!'
+158.6132 	EXP 	rewardImgRight: autoDraw = True
+158.6132 	EXP 	rightText: autoDraw = True
+159.2478 	DATA 	Keypress: space
+159.5187 	EXP 	rewardImgRight: autoDraw = False
+159.5187 	EXP 	rightText: autoDraw = False
+159.5187 	EXP 	block4: opacity = 0.0
+159.5187 	EXP 	block3: opacity = 0.0
+159.5187 	EXP 	block2: opacity = 0.0
+159.5187 	EXP 	block1: opacity = 1.0
+159.5187 	EXP 	prize_text: opacity = 1.0
+159.5187 	EXP 	repeatText: text = 'total amount for this block:100, press space to continue'
+159.5187 	EXP 	block4: autoDraw = True
+159.5187 	EXP 	block3: autoDraw = True
+159.5187 	EXP 	block2: autoDraw = True
+159.5187 	EXP 	block1: autoDraw = True
+159.5187 	EXP 	prize_text: autoDraw = True
+159.5187 	EXP 	prize_text: autoDraw = False
+159.5187 	EXP 	repeatText: autoDraw = True
+160.9824 	DATA 	Keypress: space
+161.0038 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+161.0068 	EXP 	New trial (rep=17, index=0): None
+161.0077 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+161.0084 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+161.1288 	EXP 	block4: autoDraw = False
+161.1288 	EXP 	block3: autoDraw = False
+161.1288 	EXP 	block2: autoDraw = False
+161.1288 	EXP 	block1: autoDraw = False
+161.1288 	EXP 	prize_text: autoDraw = False
+161.1288 	EXP 	repeatText: autoDraw = False
+161.1288 	EXP 	choiceImg: image = 'img/odd_choice_3.png'
+161.1288 	EXP 	choiceWarning: text = '12  for 100%              32  for 67%'
+161.1288 	EXP 	choiceImg: autoDraw = True
+161.1288 	EXP 	choiceWarning: autoDraw = True
+163.4659 	DATA 	Keypress: 1
+163.4786 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+163.4792 	EXP 	New trial (rep=0, index=0): None
+163.5815 	EXP 	choiceImg: autoDraw = False
+163.5815 	EXP 	choiceWarning: autoDraw = False
+163.5815 	EXP 	leftImg: image = 'img/odd_3_circle.png'
+163.5815 	EXP 	leftImg: autoDraw = True
+164.7287 	EXP 	leftImg: autoDraw = False
+164.7287 	EXP 	leftImg: autoDraw = False
+164.7287 	EXP 	rewardImgLeft: opacity = 1.0
+164.7287 	EXP 	rewardImgLeft: image = 'img/3m&m.png'
+164.7287 	EXP 	rewardText: text = 'You got it!'
+164.7287 	EXP 	rewardImgLeft: autoDraw = True
+164.7287 	EXP 	rewardText: autoDraw = True
+165.2159 	DATA 	Keypress: space
+165.5911 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+165.6362 	EXP 	rewardImgLeft: autoDraw = False
+165.6362 	EXP 	rewardText: autoDraw = False
+165.6362 	EXP 	block4: opacity = 0.0
+165.6362 	EXP 	block3: opacity = 0.0
+165.6362 	EXP 	block2: opacity = 0.0
+165.6362 	EXP 	block1: opacity = 1.0
+165.6362 	EXP 	prize_text: opacity = 1.0
+165.6362 	EXP 	repeatText: text = 'total amount for this block:112, press space to continue'
+165.6362 	EXP 	block4: autoDraw = True
+165.6362 	EXP 	block3: autoDraw = True
+165.6362 	EXP 	block2: autoDraw = True
+165.6362 	EXP 	block1: autoDraw = True
+165.6362 	EXP 	prize_text: autoDraw = True
+165.6362 	EXP 	prize_text: autoDraw = False
+165.6362 	EXP 	repeatText: autoDraw = True
+166.0745 	DATA 	Keypress: space
+166.0877 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+166.0907 	EXP 	New trial (rep=18, index=0): None
+166.0916 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+166.0923 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+166.2128 	EXP 	block4: autoDraw = False
+166.2128 	EXP 	block3: autoDraw = False
+166.2128 	EXP 	block2: autoDraw = False
+166.2128 	EXP 	block1: autoDraw = False
+166.2128 	EXP 	prize_text: autoDraw = False
+166.2128 	EXP 	repeatText: autoDraw = False
+166.2128 	EXP 	choiceImg: image = 'img/even_choice_2.png'
+166.2128 	EXP 	choiceWarning: text = '32  for 67%              10  for 100%'
+166.2128 	EXP 	choiceImg: autoDraw = True
+166.2128 	EXP 	choiceWarning: autoDraw = True
+169.6588 	DATA 	Keypress: 1
+169.6638 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+169.6645 	EXP 	New trial (rep=0, index=0): None
+169.7777 	EXP 	choiceImg: autoDraw = False
+169.7777 	EXP 	choiceWarning: autoDraw = False
+169.7777 	EXP 	leftImg: image = 'img/even_8_circle_2.png'
+169.7777 	EXP 	leftImg: autoDraw = True
+184.9330 	EXP 	leftImg: autoDraw = False
+184.9330 	EXP 	leftImg: autoDraw = False
+184.9330 	EXP 	rewardImgLeft: opacity = 1.0
+184.9330 	EXP 	rewardImgLeft: image = 'img/8m&m.png'
+184.9330 	EXP 	rewardText: text = 'You got it!'
+184.9330 	EXP 	rewardImgLeft: autoDraw = True
+184.9330 	EXP 	rewardText: autoDraw = True
+185.7792 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+185.8261 	EXP 	rewardImgLeft: autoDraw = False
+185.8261 	EXP 	rewardText: autoDraw = False
+185.8261 	EXP 	block4: opacity = 0.0
+185.8261 	EXP 	block3: opacity = 0.0
+185.8261 	EXP 	block2: opacity = 0.0
+185.8261 	EXP 	block1: opacity = 1.0
+185.8261 	EXP 	prize_text: opacity = 1.0
+185.8261 	EXP 	repeatText: text = 'total amount for this block:144, press space to continue'
+185.8261 	EXP 	block4: autoDraw = True
+185.8261 	EXP 	block3: autoDraw = True
+185.8261 	EXP 	block2: autoDraw = True
+185.8261 	EXP 	block1: autoDraw = True
+185.8261 	EXP 	prize_text: autoDraw = True
+185.8261 	EXP 	prize_text: autoDraw = False
+185.8261 	EXP 	repeatText: autoDraw = True
+188.1380 	DATA 	Keypress: space
+188.1587 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+188.1618 	EXP 	New trial (rep=19, index=0): None
+188.1627 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+188.1635 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+188.2693 	EXP 	block4: autoDraw = False
+188.2693 	EXP 	block3: autoDraw = False
+188.2693 	EXP 	block2: autoDraw = False
+188.2693 	EXP 	block1: autoDraw = False
+188.2693 	EXP 	prize_text: autoDraw = False
+188.2693 	EXP 	repeatText: autoDraw = False
+188.2693 	EXP 	choiceImg: image = 'img/odd_choice_3.png'
+188.2693 	EXP 	choiceWarning: text = '12  for 100%              32  for 67%'
+188.2693 	EXP 	choiceImg: autoDraw = True
+188.2693 	EXP 	choiceWarning: autoDraw = True
+189.8966 	DATA 	Keypress: 2
+189.9013 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+189.9022 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+189.9028 	EXP 	New trial (rep=0, index=0): None
+190.0026 	EXP 	choiceImg: autoDraw = False
+190.0026 	EXP 	choiceWarning: autoDraw = False
+190.0026 	EXP 	rightImg: image = 'img/odd_8_circle_3.png'
+190.0026 	EXP 	rightImg: autoDraw = True
+205.1793 	EXP 	rightImg: autoDraw = False
+205.1793 	EXP 	rightImg: autoDraw = False
+205.1793 	EXP 	rewardImgRight: opacity = 0.0
+205.1793 	EXP 	rewardImgRight: image = 'img/8m&m.png'
+205.1793 	EXP 	rightText: text = 'You did not get it!'
+205.1793 	EXP 	rewardImgRight: autoDraw = True
+205.1793 	EXP 	rightText: autoDraw = True
+206.0445 	EXP 	rewardImgRight: autoDraw = False
+206.0445 	EXP 	rightText: autoDraw = False
+206.0445 	EXP 	block4: opacity = 0.0
+206.0445 	EXP 	block3: opacity = 0.0
+206.0445 	EXP 	block2: opacity = 0.0
+206.0445 	EXP 	block1: opacity = 1.0
+206.0445 	EXP 	prize_text: opacity = 1.0
+206.0445 	EXP 	repeatText: text = 'total amount for this block:144, press space to continue'
+206.0445 	EXP 	block4: autoDraw = True
+206.0445 	EXP 	block3: autoDraw = True
+206.0445 	EXP 	block2: autoDraw = True
+206.0445 	EXP 	block1: autoDraw = True
+206.0445 	EXP 	prize_text: autoDraw = True
+206.0445 	EXP 	prize_text: autoDraw = False
+206.0445 	EXP 	repeatText: autoDraw = True
+207.8079 	DATA 	Keypress: space
+207.8288 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+207.8318 	EXP 	New trial (rep=20, index=0): None
+207.8326 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+207.8333 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+207.9486 	EXP 	block4: autoDraw = False
+207.9486 	EXP 	block3: autoDraw = False
+207.9486 	EXP 	block2: autoDraw = False
+207.9486 	EXP 	block1: autoDraw = False
+207.9486 	EXP 	prize_text: autoDraw = False
+207.9486 	EXP 	repeatText: autoDraw = False
+207.9486 	EXP 	choiceImg: image = 'img/even_choice_4.png'
+207.9486 	EXP 	choiceWarning: text = '32  for 67%              14  for 100%'
+207.9486 	EXP 	choiceImg: autoDraw = True
+207.9486 	EXP 	choiceWarning: autoDraw = True
+214.8161 	DATA 	Keypress: 1
+214.8227 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+214.8233 	EXP 	New trial (rep=0, index=0): None
+214.9254 	EXP 	choiceImg: autoDraw = False
+214.9254 	EXP 	choiceWarning: autoDraw = False
+214.9254 	EXP 	leftImg: image = 'img/even_8_circle_4.png'
+214.9254 	EXP 	leftImg: autoDraw = True
+230.0886 	EXP 	leftImg: autoDraw = False
+230.0886 	EXP 	leftImg: autoDraw = False
+230.0886 	EXP 	rewardImgLeft: opacity = 1.0
+230.0886 	EXP 	rewardImgLeft: image = 'img/8m&m.png'
+230.0886 	EXP 	rewardText: text = 'You got it!'
+230.0886 	EXP 	rewardImgLeft: autoDraw = True
+230.0886 	EXP 	rewardText: autoDraw = True
+230.9349 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+230.9818 	EXP 	rewardImgLeft: autoDraw = False
+230.9818 	EXP 	rewardText: autoDraw = False
+230.9818 	EXP 	block4: opacity = 0.0
+230.9818 	EXP 	block3: opacity = 0.0
+230.9818 	EXP 	block2: opacity = 0.0
+230.9818 	EXP 	block1: opacity = 1.0
+230.9818 	EXP 	prize_text: opacity = 1.0
+230.9818 	EXP 	repeatText: text = 'total amount for this block:176, press space to continue'
+230.9818 	EXP 	block4: autoDraw = True
+230.9818 	EXP 	block3: autoDraw = True
+230.9818 	EXP 	block2: autoDraw = True
+230.9818 	EXP 	block1: autoDraw = True
+230.9818 	EXP 	prize_text: autoDraw = True
+230.9818 	EXP 	prize_text: autoDraw = False
+230.9818 	EXP 	repeatText: autoDraw = True
+232.4017 	DATA 	Keypress: space
+232.4157 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+232.4190 	EXP 	New trial (rep=21, index=0): None
+232.4199 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+232.4206 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+232.5330 	EXP 	block4: autoDraw = False
+232.5330 	EXP 	block3: autoDraw = False
+232.5330 	EXP 	block2: autoDraw = False
+232.5330 	EXP 	block1: autoDraw = False
+232.5330 	EXP 	prize_text: autoDraw = False
+232.5330 	EXP 	repeatText: autoDraw = False
+232.5330 	EXP 	choiceImg: image = 'img/odd_choice_4.png'
+232.5330 	EXP 	choiceWarning: text = '16  for 100%              32  for 67%'
+232.5330 	EXP 	choiceImg: autoDraw = True
+232.5330 	EXP 	choiceWarning: autoDraw = True
+233.5269 	DATA 	Keypress: 2
+233.5394 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+233.5404 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+233.5410 	EXP 	New trial (rep=0, index=0): None
+233.6384 	EXP 	choiceImg: autoDraw = False
+233.6384 	EXP 	choiceWarning: autoDraw = False
+233.6384 	EXP 	rightImg: image = 'img/odd_8_circle_4.png'
+233.6384 	EXP 	rightImg: autoDraw = True
+248.8090 	EXP 	rightImg: autoDraw = False
+248.8090 	EXP 	rightImg: autoDraw = False
+248.8090 	EXP 	rewardImgRight: opacity = 0.0
+248.8090 	EXP 	rewardImgRight: image = 'img/8m&m.png'
+248.8090 	EXP 	rightText: text = 'You did not get it!'
+248.8090 	EXP 	rewardImgRight: autoDraw = True
+248.8090 	EXP 	rightText: autoDraw = True
+249.6749 	EXP 	rewardImgRight: autoDraw = False
+249.6749 	EXP 	rightText: autoDraw = False
+249.6749 	EXP 	block4: opacity = 0.0
+249.6749 	EXP 	block3: opacity = 0.0
+249.6749 	EXP 	block2: opacity = 0.0
+249.6749 	EXP 	block1: opacity = 1.0
+249.6749 	EXP 	prize_text: opacity = 1.0
+249.6749 	EXP 	repeatText: text = 'total amount for this block:176, press space to continue'
+249.6749 	EXP 	block4: autoDraw = True
+249.6749 	EXP 	block3: autoDraw = True
+249.6749 	EXP 	block2: autoDraw = True
+249.6749 	EXP 	block1: autoDraw = True
+249.6749 	EXP 	prize_text: autoDraw = True
+249.6749 	EXP 	prize_text: autoDraw = False
+249.6749 	EXP 	repeatText: autoDraw = True
+257.2648 	DATA 	Keypress: space
+257.2859 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+257.2889 	EXP 	New trial (rep=22, index=0): None
+257.2898 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+257.2905 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+257.4088 	EXP 	block4: autoDraw = False
+257.4088 	EXP 	block3: autoDraw = False
+257.4088 	EXP 	block2: autoDraw = False
+257.4088 	EXP 	block1: autoDraw = False
+257.4088 	EXP 	prize_text: autoDraw = False
+257.4088 	EXP 	repeatText: autoDraw = False
+257.4088 	EXP 	choiceImg: image = 'img/even_choice_4.png'
+257.4088 	EXP 	choiceWarning: text = '32  for 67%              18  for 100%'
+257.4088 	EXP 	choiceImg: autoDraw = True
+257.4088 	EXP 	choiceWarning: autoDraw = True
+258.7819 	DATA 	Keypress: 1
+258.7949 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+258.7958 	EXP 	New trial (rep=0, index=0): None
+258.8956 	EXP 	choiceImg: autoDraw = False
+258.8956 	EXP 	choiceWarning: autoDraw = False
+258.8956 	EXP 	leftImg: image = 'img/even_8_circle_4.png'
+258.8956 	EXP 	leftImg: autoDraw = True
+274.0623 	EXP 	leftImg: autoDraw = False
+274.0623 	EXP 	leftImg: autoDraw = False
+274.0623 	EXP 	rewardImgLeft: opacity = 1.0
+274.0623 	EXP 	rewardImgLeft: image = 'img/8m&m.png'
+274.0623 	EXP 	rewardText: text = 'You got it!'
+274.0623 	EXP 	rewardImgLeft: autoDraw = True
+274.0623 	EXP 	rewardText: autoDraw = True
+274.8936 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+274.9402 	EXP 	rewardImgLeft: autoDraw = False
+274.9402 	EXP 	rewardText: autoDraw = False
+274.9402 	EXP 	block4: opacity = 0.0
+274.9402 	EXP 	block3: opacity = 0.0
+274.9402 	EXP 	block2: opacity = 1.0
+274.9402 	EXP 	block1: opacity = 1.0
+274.9402 	EXP 	prize_text: opacity = 1.0
+274.9402 	EXP 	repeatText: text = 'total amount for this block:208, press space to continue'
+274.9402 	EXP 	block4: autoDraw = True
+274.9402 	EXP 	block3: autoDraw = True
+274.9402 	EXP 	block2: autoDraw = True
+274.9402 	EXP 	block1: autoDraw = True
+274.9402 	EXP 	prize_text: autoDraw = True
+275.9420 	EXP 	prize_text: autoDraw = False
+276.9259 	EXP 	repeatText: autoDraw = True
+283.7536 	DATA 	Keypress: space
+283.7742 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+283.7774 	EXP 	New trial (rep=23, index=0): None
+283.7787 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+283.7799 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+283.9010 	EXP 	block4: autoDraw = False
+283.9010 	EXP 	block3: autoDraw = False
+283.9010 	EXP 	block2: autoDraw = False
+283.9010 	EXP 	block1: autoDraw = False
+283.9010 	EXP 	prize_text: autoDraw = False
+283.9010 	EXP 	repeatText: autoDraw = False
+283.9010 	EXP 	choiceImg: image = 'img/odd_choice_5.png'
+283.9010 	EXP 	choiceWarning: text = '20  for 100%              32  for 67%'
+283.9010 	EXP 	choiceImg: autoDraw = True
+283.9010 	EXP 	choiceWarning: autoDraw = True
+285.7616 	DATA 	Keypress: 1
+285.7664 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+285.7670 	EXP 	New trial (rep=0, index=0): None
+285.8689 	EXP 	choiceImg: autoDraw = False
+285.8689 	EXP 	choiceWarning: autoDraw = False
+285.8689 	EXP 	leftImg: image = 'img/odd_5_circle.png'
+285.8689 	EXP 	leftImg: autoDraw = True
+287.0268 	EXP 	leftImg: autoDraw = False
+287.0268 	EXP 	leftImg: autoDraw = False
+287.0268 	EXP 	rewardImgLeft: opacity = 1.0
+287.0268 	EXP 	rewardImgLeft: image = 'img/5m&m.png'
+287.0268 	EXP 	rewardText: text = 'You got it!'
+287.0268 	EXP 	rewardImgLeft: autoDraw = True
+287.0268 	EXP 	rewardText: autoDraw = True
+287.8788 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+287.9246 	EXP 	rewardImgLeft: autoDraw = False
+287.9246 	EXP 	rewardText: autoDraw = False
+287.9246 	EXP 	block4: opacity = 0.0
+287.9246 	EXP 	block3: opacity = 0.0
+287.9246 	EXP 	block2: opacity = 1.0
+287.9246 	EXP 	block1: opacity = 1.0
+287.9246 	EXP 	prize_text: opacity = 1.0
+287.9246 	EXP 	repeatText: text = 'total amount for this block:228, press space to continue'
+287.9246 	EXP 	block4: autoDraw = True
+287.9246 	EXP 	block3: autoDraw = True
+287.9246 	EXP 	block2: autoDraw = True
+287.9246 	EXP 	block1: autoDraw = True
+287.9246 	EXP 	prize_text: autoDraw = True
+288.9282 	EXP 	prize_text: autoDraw = False
+289.9118 	EXP 	repeatText: autoDraw = True
+292.4131 	DATA 	Keypress: space
+292.4268 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+292.4298 	EXP 	New trial (rep=24, index=0): None
+292.4307 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+292.4315 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+292.5462 	EXP 	block4: autoDraw = False
+292.5462 	EXP 	block3: autoDraw = False
+292.5462 	EXP 	block2: autoDraw = False
+292.5462 	EXP 	block1: autoDraw = False
+292.5462 	EXP 	prize_text: autoDraw = False
+292.5462 	EXP 	repeatText: autoDraw = False
+292.5462 	EXP 	choiceImg: image = 'img/even_choice_4.png'
+292.5462 	EXP 	choiceWarning: text = '32  for 67%              18  for 100%'
+292.5462 	EXP 	choiceImg: autoDraw = True
+292.5462 	EXP 	choiceWarning: autoDraw = True
+295.0465 	DATA 	Keypress: 1
+295.0515 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+295.0522 	EXP 	New trial (rep=0, index=0): None
+295.1545 	EXP 	choiceImg: autoDraw = False
+295.1545 	EXP 	choiceWarning: autoDraw = False
+295.1545 	EXP 	leftImg: image = 'img/even_8_circle_4.png'
+295.1545 	EXP 	leftImg: autoDraw = True
+310.3319 	EXP 	leftImg: autoDraw = False
+310.3319 	EXP 	leftImg: autoDraw = False
+310.3319 	EXP 	rewardImgLeft: opacity = 0.0
+310.3319 	EXP 	rewardImgLeft: image = 'img/8m&m.png'
+310.3319 	EXP 	rewardText: text = 'You did not get it!'
+310.3319 	EXP 	rewardImgLeft: autoDraw = True
+310.3319 	EXP 	rewardText: autoDraw = True
+311.1519 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+311.1873 	EXP 	rewardImgLeft: autoDraw = False
+311.1873 	EXP 	rewardText: autoDraw = False
+311.1873 	EXP 	block4: opacity = 0.0
+311.1873 	EXP 	block3: opacity = 0.0
+311.1873 	EXP 	block2: opacity = 1.0
+311.1873 	EXP 	block1: opacity = 1.0
+311.1873 	EXP 	prize_text: opacity = 1.0
+311.1873 	EXP 	repeatText: text = 'total amount for this block:228, press space to continue'
+311.1873 	EXP 	block4: autoDraw = True
+311.1873 	EXP 	block3: autoDraw = True
+311.1873 	EXP 	block2: autoDraw = True
+311.1873 	EXP 	block1: autoDraw = True
+311.1873 	EXP 	prize_text: autoDraw = True
+312.1999 	EXP 	prize_text: autoDraw = False
+313.1833 	EXP 	repeatText: autoDraw = True
+314.9099 	DATA 	Keypress: space
+314.9313 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+314.9344 	EXP 	New trial (rep=25, index=0): None
+314.9353 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+314.9360 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+315.0532 	EXP 	block4: autoDraw = False
+315.0532 	EXP 	block3: autoDraw = False
+315.0532 	EXP 	block2: autoDraw = False
+315.0532 	EXP 	block1: autoDraw = False
+315.0532 	EXP 	prize_text: autoDraw = False
+315.0532 	EXP 	repeatText: autoDraw = False
+315.0532 	EXP 	choiceImg: image = 'img/odd_choice_5.png'
+315.0532 	EXP 	choiceWarning: text = '19  for 100%              32  for 67%'
+315.0532 	EXP 	choiceImg: autoDraw = True
+315.0532 	EXP 	choiceWarning: autoDraw = True
+318.8183 	DATA 	Keypress: 2
+318.8230 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+318.8240 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+318.8246 	EXP 	New trial (rep=0, index=0): None
+318.9328 	EXP 	choiceImg: autoDraw = False
+318.9328 	EXP 	choiceWarning: autoDraw = False
+318.9328 	EXP 	rightImg: image = 'img/odd_8_circle_5.png'
+318.9328 	EXP 	rightImg: autoDraw = True
+334.0985 	EXP 	rightImg: autoDraw = False
+334.0985 	EXP 	rightImg: autoDraw = False
+334.0985 	EXP 	rewardImgRight: opacity = 1.0
+334.0985 	EXP 	rewardImgRight: image = 'img/8m&m.png'
+334.0985 	EXP 	rightText: text = 'You got it!'
+334.0985 	EXP 	rewardImgRight: autoDraw = True
+334.0985 	EXP 	rightText: autoDraw = True
+334.9843 	EXP 	rewardImgRight: autoDraw = False
+334.9843 	EXP 	rightText: autoDraw = False
+334.9843 	EXP 	block4: opacity = 0.0
+334.9843 	EXP 	block3: opacity = 0.0
+334.9843 	EXP 	block2: opacity = 1.0
+334.9843 	EXP 	block1: opacity = 1.0
+334.9843 	EXP 	prize_text: opacity = 1.0
+334.9843 	EXP 	repeatText: text = 'total amount for this block:260, press space to continue'
+334.9843 	EXP 	block4: autoDraw = True
+334.9843 	EXP 	block3: autoDraw = True
+334.9843 	EXP 	block2: autoDraw = True
+334.9843 	EXP 	block1: autoDraw = True
+334.9843 	EXP 	prize_text: autoDraw = True
+335.9876 	EXP 	prize_text: autoDraw = False
+336.9711 	EXP 	repeatText: autoDraw = True
+338.4640 	DATA 	Keypress: space
+338.4846 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+338.4876 	EXP 	New trial (rep=26, index=0): None
+338.4885 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+338.4892 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+338.6080 	EXP 	block4: autoDraw = False
+338.6080 	EXP 	block3: autoDraw = False
+338.6080 	EXP 	block2: autoDraw = False
+338.6080 	EXP 	block1: autoDraw = False
+338.6080 	EXP 	prize_text: autoDraw = False
+338.6080 	EXP 	repeatText: autoDraw = False
+338.6080 	EXP 	choiceImg: image = 'img/even_choice_5.png'
+338.6080 	EXP 	choiceWarning: text = '32  for 67%              20  for 100%'
+338.6080 	EXP 	choiceImg: autoDraw = True
+338.6080 	EXP 	choiceWarning: autoDraw = True
+360.5437 	DATA 	Keypress: 2
+360.5487 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+360.5501 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+360.5508 	EXP 	New trial (rep=0, index=0): None
+360.6539 	EXP 	choiceImg: autoDraw = False
+360.6539 	EXP 	choiceWarning: autoDraw = False
+360.6539 	EXP 	rightImg: image = 'img/even_5_circle.png'
+360.6539 	EXP 	rightImg: autoDraw = True
+361.8109 	EXP 	rightImg: autoDraw = False
+361.8109 	EXP 	rightImg: autoDraw = False
+361.8109 	EXP 	rewardImgRight: opacity = 1.0
+361.8109 	EXP 	rewardImgRight: image = 'img/5m&m.png'
+361.8109 	EXP 	rightText: text = 'You got it!'
+361.8109 	EXP 	rewardImgRight: autoDraw = True
+361.8109 	EXP 	rightText: autoDraw = True
+362.7060 	EXP 	rewardImgRight: autoDraw = False
+362.7060 	EXP 	rightText: autoDraw = False
+362.7060 	EXP 	block4: opacity = 0.0
+362.7060 	EXP 	block3: opacity = 0.0
+362.7060 	EXP 	block2: opacity = 1.0
+362.7060 	EXP 	block1: opacity = 1.0
+362.7060 	EXP 	prize_text: opacity = 1.0
+362.7060 	EXP 	repeatText: text = 'total amount for this block:0, press space to continue'
+362.7060 	EXP 	block4: autoDraw = True
+362.7060 	EXP 	block3: autoDraw = True
+362.7060 	EXP 	block2: autoDraw = True
+362.7060 	EXP 	block1: autoDraw = True
+362.7060 	EXP 	prize_text: autoDraw = True
+362.7060 	EXP 	prize_text: autoDraw = False
+362.7060 	EXP 	repeatText: autoDraw = True
+363.2940 	DATA 	Keypress: space
+363.3078 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+363.3083 	EXP 	New trial (rep=0, index=0): None
+363.3175 	EXP 	block4: autoDraw = False
+363.3175 	EXP 	block3: autoDraw = False
+363.3175 	EXP 	block2: autoDraw = False
+363.3175 	EXP 	block1: autoDraw = False
+363.3175 	EXP 	prize_text: autoDraw = False
+363.3175 	EXP 	repeatText: autoDraw = False
+363.3175 	EXP 	text: autoDraw = True
+364.5776 	DATA 	Keypress: space
+364.5836 	EXP 	New trial (rep=27, index=0): None
+364.5846 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+364.5851 	EXP 	New trial (rep=0, index=0): None
+364.7074 	EXP 	text: autoDraw = False
+364.7074 	EXP 	fixImg: image = 'img/odd_4_square.png'
+364.7074 	EXP 	fixImg: autoDraw = True
+365.6948 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+365.6955 	EXP 	New trial (rep=0, index=0): None
+365.8046 	EXP 	fixImg: autoDraw = False
+365.8046 	EXP 	fixImg: autoDraw = False
+365.8046 	EXP 	delayImg: image = 'img/odd_8_square_4.png'
+365.8046 	EXP 	delayImg: autoDraw = True
+395.9131 	EXP 	delayImg: autoDraw = False
+395.9131 	EXP 	delayImg: autoDraw = False
+395.9131 	EXP 	choiceImg: image = 'img/odd_choice_4.png'
+395.9131 	EXP 	choiceWarning: text = '16  for 100%              32  for 67%'
+395.9131 	EXP 	choiceImg: autoDraw = True
+395.9131 	EXP 	choiceWarning: autoDraw = True
+400.4391 	DATA 	Keypress: 1
+400.4519 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+400.4526 	EXP 	New trial (rep=0, index=0): None
+400.5519 	EXP 	choiceImg: autoDraw = False
+400.5519 	EXP 	choiceWarning: autoDraw = False
+400.5519 	EXP 	leftImg: image = 'img/odd_4_circle.png'
+400.5519 	EXP 	leftImg: autoDraw = True
+401.6948 	EXP 	leftImg: autoDraw = False
+401.6948 	EXP 	leftImg: autoDraw = False
+401.6948 	EXP 	rewardImgLeft: opacity = 1.0
+401.6948 	EXP 	rewardImgLeft: image = 'img/4m&m.png'
+401.6948 	EXP 	rewardText: text = 'You got it!'
+401.6948 	EXP 	rewardImgLeft: autoDraw = True
+401.6948 	EXP 	rewardText: autoDraw = True
+402.5397 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+402.5865 	EXP 	rewardImgLeft: autoDraw = False
+402.5865 	EXP 	rewardText: autoDraw = False
+402.5865 	EXP 	block4: opacity = 0.0
+402.5865 	EXP 	block3: opacity = 0.0
+402.5865 	EXP 	block2: opacity = 1.0
+402.5865 	EXP 	block1: opacity = 1.0
+402.5865 	EXP 	prize_text: opacity = 1.0
+402.5865 	EXP 	repeatText: text = 'total amount for this block:16, press space to continue'
+402.5865 	EXP 	block4: autoDraw = True
+402.5865 	EXP 	block3: autoDraw = True
+402.5865 	EXP 	block2: autoDraw = True
+402.5865 	EXP 	block1: autoDraw = True
+402.5865 	EXP 	prize_text: autoDraw = True
+402.5865 	EXP 	prize_text: autoDraw = False
+402.5865 	EXP 	repeatText: autoDraw = True
+420.1902 	DATA 	Keypress: escape
+420.2389 	EXP 	window1: mouseVisible = True
