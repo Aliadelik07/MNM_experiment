@@ -1,4 +1,4 @@
-﻿/************************** 
+/************************** 
  * Discounting_Block Test *
  **************************/
 
@@ -87,7 +87,6 @@ function updateInfo() {
   return Scheduler.Event.NEXT;
 }
 
-
 var Instruction_2Clock;
 var Intro_1;
 var intro_1_ending;
@@ -151,7 +150,7 @@ function experimentInit() {
   Intro_1 = new visual.TextStim({
     win: psychoJS.window,
     name: 'Intro_1',
-    text: "Welcome dear participants\n\nThis game is about collecting as much M&Ms as you can!\n\nEach time you must choose from fixed 32 M&Ms with probability of 2/3 or smaller amount of M&Ms with 100% probability.  The exact amount for each option is written on screen.\n\nEven if you are confused now, take it easy and try to play. It will get to you.\n\nPress 'space' to play it a bit for yourself..",
+    text: "Welcome dear participants\n\nThis game is about collecting as much M&Ms as you can!\n\nEach time you must choose from two options with different probability and waiting time. The exact amount and probability for each option is written on the screen.\n\nEven if you are confused now, take it easy and try to play. It will get to you.\n\nPress 'space' to play it a bit for yourself..",
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -179,7 +178,7 @@ function experimentInit() {
   text_4 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_4',
-    text: 'Please wait, you are expriencing the delay!',
+    text: 'Please wait, you are expriencing the waiting duration!',
     font: 'Arial',
     units: undefined, 
     pos: [0, (- 0.4)], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -201,7 +200,7 @@ function experimentInit() {
   text_3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_3',
-    text: 'Please wait, you are expriencing the delay!',
+    text: 'Please wait, you are expriencing the waiting duration!',
     font: 'Arial',
     units: undefined, 
     pos: [0, (- 0.4)], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -214,7 +213,7 @@ function experimentInit() {
   text_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_2',
-    text: "You had exprienced the delay!\n\nPlease press 'space' to start choosing again.",
+    text: "You had exprienced the waiting duration!\n\nPlease press 'space' to start choosing again.",
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -266,7 +265,7 @@ function experimentInit() {
   text_5 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_5',
-    text: '(press "1")                                              (press "2")',
+    text: '(To choose this option press "1")                                              (To choose this option press "2")',
     font: 'Arial',
     units: undefined, 
     pos: [0, (- 0.35)], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -408,7 +407,7 @@ function experimentInit() {
   
   key_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
-  ending_text = "You saw how easy it was?! \n\n Have you noticed the amount of delay that was different for small and large M&Ms? \n\n Their waiting duration will be presented at the beginning of the each 4 blocks of the game. \n\n You should know that you cannot increase the number of rounds by choosing the faster rewards. \n\n One more thing, for every 200 points you earn one hidden reward will be shown!  \n\n Press space to play the game for real!";
+  ending_text = "You saw how easy it was?! \n\n Have you noticed the amount of waiting duration that was different for small and large M&Ms? \n\n Their waiting duration will be presented at the beginning of the each 4 blocks of the game. \n\n You should know that you cannot increase the number of rounds by choosing the faster rewards. \n\n One more thing, for every 200 points you earn one hidden reward!  \n\n Press space to play the game for real!";
   
   // Initialize components for Routine "endScreen"
   endScreenClock = new util.Clock();
@@ -850,6 +849,7 @@ function InitializationRoutineBegin(snapshot) {
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
+    n += 1;
     if (((n % 2) === 0)) {
         tx = ((((long_reward[block].toString() + "  for 67%") + "              ") + short_reward[block].toString()) + "  for 100%");
         chanceLeft = chance[(n % 9)];
@@ -1415,8 +1415,8 @@ function choiceScreenRoutineEnd(snapshot) {
         }
     
     choiceResp.stop();
-    thisExp.addData("small_reward", short_reward[block]);
-    thisExp.addData("Delay", long_delay[block]);
+    psychoJS.experiment.addData("small_reward", short_reward[block]);
+    psychoJS.experiment.addData("Delay", long_delay[block]);
     if (((n % 2) === 0)) {
         left_delay = long_delay[block];
         right_delay = short_delay[block];
@@ -1606,10 +1606,10 @@ function feedbackLeftRoutineBegin(snapshot) {
     rewardImgLeft.setOpacity(transparencyLeft);
     rewardImgLeft.setImage(rewardImageLeft);
     rewardText.setText(chanceLeft);
-    thisExp.addData("result of chosen", chanceLeft);
-    thisExp.addData("delay of chosen", left_delay);
-    thisExp.addData("reward of chosen", rewardLeft);
-    thisExp.addData("total amount", total);
+    psychoJS.experiment.addData("result of chosen", chanceLeft);
+    psychoJS.experiment.addData("delay of chosen", left_delay);
+    psychoJS.experiment.addData("reward of chosen", rewardLeft);
+    psychoJS.experiment.addData("total amount", total);
     
     // keep track of which components have finished
     feedbackLeftComponents = [];
@@ -1798,10 +1798,10 @@ function feedbackRightRoutineBegin(snapshot) {
     rewardImgRight.setOpacity(transparencyRight);
     rewardImgRight.setImage(rewardImageRight);
     rightText.setText(chanceRight);
-    thisExp.addData("result of chosen", chanceRight);
-    thisExp.addData("delay of chosen", right_delay);
-    thisExp.addData("reward of chosen", rewardRight);
-    thisExp.addData("total amount", total);
+    psychoJS.experiment.addData("result of chosen", chanceRight);
+    psychoJS.experiment.addData("delay of chosen", right_delay);
+    psychoJS.experiment.addData("reward of chosen", rewardRight);
+    psychoJS.experiment.addData("total amount", total);
     
     // keep track of which components have finished
     feedbackRightComponents = [];
@@ -2175,7 +2175,7 @@ function Block_screenRoutineEnd(snapshot) {
         }
     
     key_resp.stop();
-    ending_text = "This block has ended. \n \nTo start and experience the delay of the next block, press space.";
+    ending_text = "This block has ended. \n \nTo start and experience the waiting duration for the next block, press space.";
     
     // the Routine "Block_screen" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
@@ -2202,7 +2202,7 @@ function endScreenRoutineBegin(snapshot) {
         a[i] = (a[i] / maxa);
     }
     k = ((((6 * (a[3] + a[0])) + (8 * (a[3] + a[1]))) + (15 * (a[1] + a[2]))) / (29 * 2));
-    thisExp.addData("DelayFactor", k);
+    psychoJS.experiment.addData("DelayFactor", k);
     
     // keep track of which components have finished
     endScreenComponents = [];
