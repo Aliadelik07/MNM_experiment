@@ -1880,8 +1880,8 @@ function choiceScreenRoutineEnd(snapshot) {
         }
     
     choiceResp.stop();
-    thisExp.addData("small_reward", short_reward[block]);
-    thisExp.addData("Delay", long_delay[block]);
+    psychoJS.experiment.addData("small_reward", short_reward[block]);
+    psychoJS.experiment.addData("Delay", long_delay[block]);
     if (((n % 2) === 0)) {
         left_delay = long_delay[block];
         right_delay = short_delay[block];
@@ -2072,10 +2072,10 @@ function feedbackLeftRoutineBegin(snapshot) {
     rewardImgLeft.setOpacity(transparencyLeft);
     rewardImgLeft.setImage(rewardImageLeft);
     rewardText.setText(chanceLeft);
-    thisExp.addData("result of chosen", chanceLeft);
-    thisExp.addData("delay of chosen", left_delay);
-    thisExp.addData("reward of chosen", rewardLeft);
-    thisExp.addData("total amount", total);
+    psychoJS.experiment.addData("result of chosen", chanceLeft);
+    psychoJS.experiment.addData("delay of chosen", left_delay);
+    psychoJS.experiment.addData("reward of chosen", rewardLeft);
+    psychoJS.experiment.addData("total amount", total);
     
     // keep track of which components have finished
     feedbackLeftComponents = [];
@@ -2264,10 +2264,10 @@ function feedbackRightRoutineBegin(snapshot) {
     rewardImgRight.setOpacity(transparencyRight);
     rewardImgRight.setImage(rewardImageRight);
     rightText.setText(chanceRight);
-    thisExp.addData("result of chosen", chanceRight);
-    thisExp.addData("delay of chosen", right_delay);
-    thisExp.addData("reward of chosen", rewardRight);
-    thisExp.addData("total amount", total);
+    psychoJS.experiment.addData("result of chosen", chanceRight);
+    psychoJS.experiment.addData("delay of chosen", right_delay);
+    psychoJS.experiment.addData("reward of chosen", rewardRight);
+    psychoJS.experiment.addData("total amount", total);
     
     // keep track of which components have finished
     feedbackRightComponents = [];
@@ -2669,7 +2669,7 @@ function endScreenRoutineBegin(snapshot) {
         a[i] = (a[i] / maxa);
     }
     k = ((((6 * (a[3] + a[0])) + (8 * (a[3] + a[1]))) + (15 * (a[1] + a[2]))) / (29 * 2));
-    thisExp.addData("DelayFactor", k);
+    psychoJS.experiment.addData("DelayFactor", k);
     
     // keep track of which components have finished
     endScreenComponents = [];
